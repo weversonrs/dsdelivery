@@ -2,6 +2,7 @@ package com.devsuperior.devdelivery.dto;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -19,7 +20,7 @@ public class OrderDTO implements Serializable {
 	private Instant moment;
 	private OrderStatus status;
 	
-	private List<ProductDTO> products;
+	private List<ProductDTO> products = new ArrayList<>();
 	
 
 	public OrderDTO() {
